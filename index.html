@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <title>Demo</title>
+  </head>
+
+  <body id="weatherUI">
+    <a href="/main.css"><span><img/ src="img/sun.svg"></span></a>
+     <div class="boxed">
+  <!-- 
+    <div id="parent-id">
+      <p>1</p>
+      <p class="test">2</p>
+      <p>3</p>
+      <p>4</p>
+    </div> -->
+    <center>
+   <div class="card">
+       <div class="search">
+       </div>
+    </div>
+
+    <img class="App-logo" src="img/sun.png" alt="the sun!!">
+    <div>
+    </div>
+    <div class="card">
+      <div class="search">
+        <input type="text" class="search-bar" placeholder="Any Major City">
+        <button id="SwitchColor"><span></span></button>
+      </div>
+      <div class="weather loading">
+        <h2 class="city"></h2>
+        <h1 class="temp">°F</h1>
+        <div class="flex">
+          <img src="img/sun.svg" alt="" class="icon" />
+          <div class="description"></div>
+        </div>
+        <div class="humidity">Humidity: %</div>
+        <div class="wind">Wind speed:  mi/h</div>
+      </div>
+    </div>
+    <script>
+
+      
+
+      $location.fetch({
+         handler({ lat, lng }) {
+           const query = `${lat},${lng}`;
+           const url = `https://maps.apple.com/?q=${query}&ll=${query}`;
+           $share.sheet(url);
+         }
+      });
+      console.log(handler);
+
+    </script>
+
+   </div>
+   </center>
+  </body>
+  <script src="index.js"></script>
+</html>
