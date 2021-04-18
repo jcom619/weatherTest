@@ -48,21 +48,12 @@
     </div>
     <script>
 
-      
-
-      $location.fetch({
-         handler({ lat, lng }) {
-           const query = `${lat},${lng}`;
-           const url = `https://maps.apple.com/?q=${query}&ll=${query}`;
-           $share.sheet(url);
-         }
-      });
-      console.log(handler);
+     
 
     </script>
 
    </div>
    </center>
   </body>
-  <script src="http://127.0.0.1:5501/script.js"></script>
+  <script src="http://127.0.0.1:5501/deliver.js"></script>
 </html>
