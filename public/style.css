@@ -1,0 +1,76 @@
+* { margin: 0; padding: 0; }
+body {
+   margin: 0; padding: 0;
+/*   box-shadow: inset 0 0 200px 100px black; */
+}
+.wrapper {
+  overflow: hidden;
+}
+
+.sliding-background {
+  background-color: rgba(10,40,90,0.71);
+background-image: url("https://pngimg.com/uploads/cloud/cloud_PNG4.png");
+/*   background-position: stretch; */
+  
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */");
+  background-size: norepeat;
+  height: 100vh;
+  width: 5076px;
+  animation: slide 150s linear infinite;
+}
+iframe {
+  height: 10%;
+/*   box-shadow: 0 0 40px 10px black, inset 0 0 50px 10px black; */
+}
+@keyframes slide{
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-1692px, 0, 0);
+  }
+}
+
+.word-wrapper {
+  position: absolute;
+  height: 10px;
+  width: 30px;
+  border: 1px solid black;
+  z-index: 5555;
+/*   background-color: rgba(0,0,0,0.3); */
+  opacity: .8;
+  margin: 0 auto;
+/*    box-shadow: 0 0 20px 10px black; */
+  top: -70;
+  left: 50;
+  right: 50;
+  -webkit-transform: translateY(-100%);
+}
+
+.words {
+  font: small-caps 30 20px 'Lato';
+  overflow: hidden;
+  text-align: center;
+}
+
+.cloud-wrapper {
+  z-index: 30;
+  position: absolute;
+  top: -20px;
+  left: 90px;
+  overflow: hidden;
+  animation: glide 60s linear infinite;
+}
+
+@keyframes glide {
+  0%{
+    transform: translate3d(0, 0, 200);
+  }
+  100%{
+    transform: translate3d(-1692px, 0, 0);
+  }
+}
+
+.cloud {
+  overflow: hidden;
+}

@@ -1,0 +1,51 @@
+n/* 600px and below */
+
+
+
+@media screen and (max-width: 780px) {
+
+    main {
+      
+    }  
+    .logo {
+      font-size: 50px;
+    }
+    ul, nav-links, a {
+      font-size: 20px;
+    }
+    .App-logo {
+      display: none;
+    }
+    iframe {
+      display: none;
+    }
+    p {
+      font-size: 10px;
+    }
+  }
+
+@media screen and (max-width: 400px) {
+
+    img {
+      display: none;
+    }  
+    .logo {
+      font-size: 20px;
+    }
+    ul, nav-links, a {
+      font-size: 10px;
+    }
+    .App-logo {
+      display: none;
+    }
+    iframe {
+      width: 100vw;
+      padding; 1px;
+      margin: 1px;
+      right: -20%;
+      
+    }
+    p {
+      font-size: 10px;
+    }
+  }
